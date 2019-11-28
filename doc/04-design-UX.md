@@ -85,8 +85,3 @@ Trouvez-vous que les policiers ont une formation adéquate (formation académiqu
 Non &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Oui
 </pre>
 
-## Configuration des questions
-
-Un fichier YAML sur chaque ordi servira à configurer les questions. Tous les ordis ont ces questions.
-
-![Slider](images/yaml-config.png)

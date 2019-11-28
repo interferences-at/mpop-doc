@@ -61,3 +61,9 @@ Voici la signature des méthodes de notre API:
 ![Facade](images/facade.png)
 
 Une interface JSON-RPC 2.0 va imiter fournir des méthodes semblables aux clients.
+
+## Configuration des questions
+
+Un fichier YAML sur chaque ordi servira à configurer les questions. Tous les ordis ont ces questions.
+
+![Slider](images/yaml-config.png)
