@@ -16,6 +16,8 @@ Les bornes à questionnaire sont des écrans tactiles offrant des questions. Un 
 
 En tant que visteur, je dois pouvoir lire ma carte RFID pour associer ma profil à mes réponses.
 
+Afficher le RFID de la carte lorsqu'on la lit. Cela va personnaliser l'expérience.
+
 #### Répondre à une question à glissière
 
 En tant que visiteur, je dois pouvoir répondre à une question à glissière simple.

@@ -49,4 +49,15 @@ On peut prendre Flyway pour gérer les migrations de base de données. Le tout d
 
 ### Schema
 
+Voici le schéma prévu pour notre base de données:
 
+![Database schema](images/database.png)
+
+
+## Service pour stocker les réponses
+
+Voici la signature des méthodes de notre API:
+
+![Facade](images/facade.png)
+
+Une interface JSON-RPC 2.0 va imiter fournir des méthodes semblables aux clients.
