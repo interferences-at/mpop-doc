@@ -48,6 +48,11 @@ Options possibles:
 
 Ce choix et persistent, mais l'usager peut changer d'avis en cours de route.
 
+Détails techniques:
+
+- Option 1: Utiliser un fichier de configuration avec toutes les questions dans les deux langues. Ce fichier de configuration sera partagé par toutes les instances. Il faudra s'assurer que toutes les instances ont les mêmes valeurs pour chaque question.
+- Option 2: Utiliser une librairie d'i18n.
+
 ### Requis non-fonctionnels - questionnaires
 
 #### Stocker les réponses dans une base de données centralisée
@@ -90,6 +95,12 @@ Détails techniques:
 
 - une clé d'API, chiffrée en TLS sera suffisante pour assurer la sécurité de cette connection.
 - un service Web en REST (HTTP POST) ou websocket conviendra.
+
+### Classer les questions en grandes familles
+
+3 grandes catégories:
+protéger réhabiliter punir
+
 
 ## Visualisation des données
 
