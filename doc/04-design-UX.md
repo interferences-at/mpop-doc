@@ -8,7 +8,7 @@
 
 (évidemment, ce sera ici le français au lieu du chinois)
 
-## Exemples de qestions
+## Exemples de questions
 
 Voici quelques exemples de questions: (1.1 L’infraction)
 
