@@ -1,0 +1,36 @@
+msc {
+  User, Control, Dataviz, Database;
+
+  --- [label="The user scans their RFID tag"];
+  User -> Control [label="Scan RFID"];
+  Control => Database [label="getUserPreferences"];
+  Control << Database [label="userPreferences"];
+  Control => Database [label="getUserAnswers"];
+  Control << Database [label="userAnswers"];
+  User <- Control [label="See user preferences, load answers"];
+  ...;
+  --- [label="The user answers a question"];
+  User -> Control [label="Choose question"];
+  Control -> Dataviz [label="Choose question"];
+  User -> Control [label="Change answer"];
+  Control -> Dataviz [label="Update answer value"];
+  User -> Control [label="Choose next question (or timeout happens)"];
+  Control -> Dataviz [label="Choose question"];
+  Control => Database [label="setAnswer"];
+  Control << Database [label="success"];
+  ...;
+  --- [label="The user chooses to view all answers"];
+  User -> Control [label="Choose to view answers"];
+  User <- Control [label="Show an explanation of what we see for answers X"];
+  Control -> Dataviz [label="Show stats for question X"];
+  Control => Database [label="getStatsForQuestion X"];
+  Control << Database [label="statsForQuestion X"];
+  User -> Control [label="Choose another question"];
+  User <- Control [label="Show an explanation of what we see for answers Y"];
+  Control -> Database [label="getStatsForQuestion Y"];
+  Control << Database [label="statsForQuestion Y"];
+  Control -> Dataviz [label="Show stats for question Y"];
+  User -> Control [label="Choose to go back to answering mode"];
+  Control -> Dataviz [label="Show my answer only for question Y"];
+  ...;
+}

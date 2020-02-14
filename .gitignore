@@ -3,3 +3,5 @@ node_modules/
 .~.swp
 .DS_Store
 package-lock.json
+assets-src/sequence-diagram-dataviz.png
+
